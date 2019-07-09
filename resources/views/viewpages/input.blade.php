@@ -41,7 +41,10 @@
                                             <label class="col-md-2 control-label" >都道府県</label>
                                             <div class="col-md-4">
                                                 <select name="todohuken" id="todohuken" class="form-control">
-                                                <option value="msg" selected="selected" class="msg">都道府県</option>
+                                                    <option value="msg" selected="selected" class="msg">都道府県</option>
+                                                    @foreach($pref as $idx => $todohuken)
+                                                        <option value="{{ $idx }}" class="msg">{{ $todohuken }}</option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                         </div>
