@@ -29,11 +29,11 @@ $(function () {
             },
             fname: {
                 required: true,
-                maxlength: 50,
+                maxlength: 10,
             },
             lname: {
                 required: true,
-                maxlength: 50,
+                maxlength: 15,
             },
             viewcnt: {
                 required: true,
