@@ -16,8 +16,8 @@ class CreateExamsTable extends Migration
         Schema::create('exam_log', function (Blueprint $table) {
             $table->increments('id');
             $table->dateTime('crnt_date');
-            $table->string('todohuken', 50); // varchar
-            $table->string('fname', 10);
+            $table->string('todohuken', 50);
+            $table->string('fname', 10);  // FIXME: 氏名最大長について。
             $table->string('lname', 15);
             $table->integer('viewcnt');
             $table->string('ip_addr', 30);

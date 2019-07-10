@@ -35,7 +35,8 @@
                                 <div class="panel-heading">{{ Config::get('defaultcfg.defaultcfg.INPUT_TITLE') }}</div>
                                 <div class="panel-body">
 
-                                    <form id="nameForm" class="form-horizontal" role="form" method="post" action="">
+                                    <form id="nameForm" class="form-horizontal" role="form" method="post" action="{{ url('/viewpage') }}">
+                                        {{ csrf_field() }}
 
                                         <div class="form-group">
                                             <label class="col-md-2 control-label" >都道府県</label>

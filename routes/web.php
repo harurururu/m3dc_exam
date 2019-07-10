@@ -13,3 +13,4 @@
 
 Route::get('/', 'InputController@index');
 Route::get('/viewpage', 'InputController@displayview');
+Route::post('/viewpage', 'InputController@regist');
